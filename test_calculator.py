@@ -6,14 +6,18 @@ class TestCalculator(unittest.TestCase):
     def setUp(self):
         self.x = 34
         self.y = 50
+        print("setUp called")
 
     # use to cleanup the resources
     def tearDown(self):
         self.x = 0
         self.y = 0
+        print("teardown called")
 
     def test_add(self):
+        # act
         result = Calculator.add(self.x, self.y)
+        # assert
         self.assertEqual(result, self.x + self.y)
 
     def test_sub(self):
