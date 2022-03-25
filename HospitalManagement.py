@@ -5,13 +5,13 @@ con = sqlite3.connect('hospitalDB.db')
 cursor = con.cursor()
 
 
-sqlite_query = '''CREATE TABLE Patient_Details(
-                  patientCode INTEGER PRIMARY KEY,
-                  name TEXT NOT NULL,
-                  address TEXT NOT NULL,
-                  phone TEXT NOT NULL);'''
-cursor.execute(sqlite_query)
-print('table is created successfully')
+# sqlite_query = '''CREATE TABLE Patient_Details(
+#                   patientCode INTEGER PRIMARY KEY,
+#                   name TEXT NOT NULL,
+#                   address TEXT NOT NULL,
+#                   phone TEXT NOT NULL);'''
+# cursor.execute(sqlite_query)
+# print('table is created successfully')
 
 
 def Add_Patient():
